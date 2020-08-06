@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+/************
+basic styles
+************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Space Mono', monospace;
+  line-height: 1.6;
+  color: #1b1e29; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    transition: 0.3s ease; }
+
+ul {
+  list-style: none; }
+
+.container {
+  width: 80%;
+  margin: auto; }
+
+.py {
+  padding: 60px 0; }
+
+.uvod {
+  background: #f16b42;
+  text-align: center; }
+  .uvod h2 {
+    font-size: 2rem; }
+    .uvod h2::after {
+      display: block;
+      content: "";
+      background: #1b1e29;
+      height: 6px;
+      width: 100px;
+      margin: 20px auto; }
+
+nav {
+  background: #f16b42;
+  padding: 5px 0;
+  border-bottom: 3px solid #1b1e29; }
+  nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    nav .container .logo {
+      font-size: 1.5rem;
+      color: #1b1e29;
+      text-shadow: 0 0 2px #fff;
+      font-weight: 700; }
+      nav .container .logo:hover {
+        color: #fff;
+        text-shadow: 0 0 2px #1b1e29; }
+    nav .container ul {
+      display: flex; }
+      nav .container ul li a {
+        color: #fff;
+        margin-left: 40px;
+        text-transform: uppercase; }
+        nav .container ul li a:hover {
+          color: #1b1e29; }
+
+footer {
+  background: #1b1e29;
+  color: #f16b42;
+  border-top: 3px solid #f16b42; }
+  footer .container {
+    display: flex;
+    flex-wrap: wrap; }
+    footer .container article {
+      flex: 1; }
+      footer .container article hr {
+        border: none;
+        width: 10%;
+        background: white;
+        height: 3px;
+        margin: 15px 0; }
+      footer .container article li {
+        list-style: none; }
+        footer .container article li a {
+          color: lightgray;
+          list-style: none; }
+          footer .container article li a:hover {
+            color: #fff; }
+
+.homeHeader, .zabavaHeader, .decaHeader {
+  background-image: url(../roller_skates/img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: right;
+  padding-right: 50px; }
+  .homeHeader h1, .zabavaHeader h1, .decaHeader h1 {
+    color: #f16b42;
+    font-size: 5rem;
+    text-shadow: 0 0 2px #1b1e29; }
+  .homeHeader button, .zabavaHeader button, .decaHeader button {
+    padding: 10px 30px;
+    background: #f16b42;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    margin-top: 20px; }
+    .homeHeader button:hover, .zabavaHeader button:hover, .decaHeader button:hover {
+      background: #1b1e29;
+      cursor: pointer; }
+
+.modeli {
+  display: flex;
+  flex-wrap: wrap; }
+  .modeli article {
+    flex: 1; }
+    .modeli article img {
+      width: 100%;
+      border: 1px solid #f16b42;
+      box-shadow: 0 0 30px #2d303f; }
+  .modeli article:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-right: 50px;
+    text-align: right; }
+    .modeli article:first-child h2 {
+      font-size: 2rem;
+      color: #f16b42; }
+
+.zabavaHeader, .decaHeader {
+  height: 60vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/zabava.jpg);
+  align-items: center;
+  text-align: center;
+  padding-right: 0px; }
+
+.zabavaMain {
+  display: flex;
+  flex-wrap: wrap; }
+  .zabavaMain h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 1.2; }
+  .zabavaMain article:first-child {
+    flex: 2; }
+    .zabavaMain article:first-child li {
+      margin-bottom: 20px; }
+    .zabavaMain article:first-child li::before {
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 400;
+      color: #f16b42;
+      margin-right: 5px;
+      content: '\f058'; }
+  .zabavaMain article:last-child {
+    flex: 1;
+    display: flex;
+    align-items: center; }
+    .zabavaMain article:last-child img {
+      width: 100%;
+      border: 1px solid #f16b42;
+      box-shadow: 0 0 30px #2d303f; }
+
+.decaHeader {
+  height: 60vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/deca_header.jpg); }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px; }
+
+.column {
+  flex: 25%;
+  padding: 0 4px; }
+
+.prva {
+  padding-left: 120px;
+  padding-bottom: 30px; }
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  padding-bottom: 30px;
+  border-radius: 30%; }
+
+/*# sourceMappingURL=style.css.map */
